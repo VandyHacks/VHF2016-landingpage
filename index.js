@@ -6,8 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var subscribe = require('./routes/subscribe');
 var mcapi = require('mailchimp-api');
+var keys = require('./keys');
 
-mc = new mcapi.Mailchimp('d63c6dbc225c25408c17b575d9e8f000-us13');
+mc = new mcapi.Mailchimp(keys.public_key);
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -26,16 +27,6 @@ app.use('/', routes);
 // views is directory for all template files
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
-// app.get('/', function(request, response) {
-//   response.render('pages/index');
-// });
-
-//app.post('/subscribe', function(req, res, next) {
-//  res.send('hi');
-//  console.log(req.body);
-//
-//});
-
 
 app.post('/subscribe',subscribe.subscribe);
 
