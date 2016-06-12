@@ -1,9 +1,9 @@
 /*
  * POST subscribe an email to a list.
  */
-var keys = require('../keys.js');
+const listId = 'a88ab95526'
 exports.subscribe = function(req, res){
-  mc.lists.subscribe({id: keys.listId, email:{email:req.body.email}}, function(data) {
+  mc.lists.subscribe({id: listId, email:{email:req.body.email}}, function(data) {
       //req.session.success_flash = 'User subscribed successfully! Look for the confirmation email.';
       console.log('successful subscription');
       res.redirect('/');
