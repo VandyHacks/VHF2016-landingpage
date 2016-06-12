@@ -4,9 +4,7 @@ var app = express();
 var router = express.Router();
 var subscribe = require('./subscribe');
 var bodyParser = require('body-parser');
-var mcapi = require('mailchimp-api');
 
-mc = new mcapi.Mailchimp('d63c6dbc225c25408c17b575d9e8f000-us13');
 
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true }));
