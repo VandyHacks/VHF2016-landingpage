@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var subscribe = require('./routes/subscribe');
 var mcapi = require('mailchimp-api');
-console.log(process.env.MAILCHIMP_API_KEY);
+
 mc = new mcapi.Mailchimp(process.env.MAILCHIMP_API_KEY);
 
 var routes = require('./routes/index');
