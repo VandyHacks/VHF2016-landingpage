@@ -25,3 +25,4 @@ router.get('/', function(req, res, next) {
 //router.post('/subscribe',subscribe.subscribe);
 
 module.exports = router;
+

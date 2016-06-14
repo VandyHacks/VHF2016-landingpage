@@ -27,12 +27,19 @@ app.use('/', routes);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 
-
-app.post('/subscribe',subscribe.subscribe);
-
-app.listen(app.get('port'), function() {
+const server = app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
+
+var io = require('socket.io')(server);
+
+io.on('connection', (socket) => {
+  console.log('Client connected');
+  socket.on('disconnect', () => console.log('Client disconnected'));
+});
+
+app.set('socketio',io);
+app.post('/subscribe',subscribe.subscribe);
 
 // error handlers
 
@@ -56,4 +63,5 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
 

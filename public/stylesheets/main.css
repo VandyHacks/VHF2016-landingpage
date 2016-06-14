@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @font-face {
      font-family: sofiaprocondblack;
      src: url(SofiaProCondBlack.ttf);
@@ -298,4 +298,10 @@ input[type="textbox"]:focus{
     .jumbotron .lang-logo img {
       max-width: 100%; }
 
->>>>>>> 64bd0a2f34574bacf23c6b1d317b8e352a702da1
+
+
+#sub_text {
+    text-align:center;
+    font-family: sofiaprocondblack;
+    color: #cc0000
+}
