@@ -7,7 +7,7 @@ exports.subscribe = function(req, res){
       //req.session.success_flash = 'User subscribed successfully! Look for the confirmation email.';
       console.log('successful subscription');
       var io = req.app.get('socketio');
-      io.emit('error', "Successful Subscribed! Stay tuned for updates and get excited!");
+      io.emit('error', "Successfully Subscribed! Stay tuned for updates and get excited!");
       res.send('done');
     },
     function(error) {
