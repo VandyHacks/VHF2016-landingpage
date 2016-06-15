@@ -22,6 +22,6 @@ exports.subscribe = function(req, res){
         io.emit('error', "Try Again. An error occured!");
         console.log("an error occured");
       }
-      res.send('done');
+      res.redirect('/');
     });
 };
