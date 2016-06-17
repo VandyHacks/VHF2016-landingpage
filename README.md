@@ -1,6 +1,7 @@
 VHF2016 landing page
 
 Instructions:
+
 1. Clone the repo with "heroku git:clone -a fast-falls-60036"
 2. Run npm install in the root directory
 3. To run the app locally, run "heroku local web".
