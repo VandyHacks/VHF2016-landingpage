@@ -7,7 +7,7 @@ exports.subscribe = function(req, res){
       //req.session.success_flash = 'User subscribed successfully! Look for the confirmation email.';
       console.log('successful subscription');
       var io = req.app.get('socketio');
-      io.emit('error', "Successfully Subscribed! Stay tuned for updates and get excited!");
+      io.emit('error', "Successfully subscribed! Stay tuned for updates and get excited!");
       res.send('done');
     },
     function(error) {
@@ -15,11 +15,11 @@ exports.subscribe = function(req, res){
         //req.session.error_flash = error.code + ": " + error.error;
         var io = req.app.get('socketio');
         console.log(error.code + ": " + error.error);
-        io.emit('error', "Try Again with a valid email address!");
+        io.emit('error', "Try again with a valid email address!");
       } else {
         //req.session.error_flash = 'There was an error subscribing that user';
         var io = req.app.get('socketio');
-        io.emit('error', "Try Again. An error occured!");
+        io.emit('error', "Try again. An error occured!");
         console.log("an error occured");
       }
       res.redirect('/');

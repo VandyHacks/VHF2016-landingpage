@@ -67,8 +67,8 @@ h2 {
      -ms-filter: "FlipH";
      position: absolute;
      right: 1%;
-     height: 30%;
-     top: 10%;
+     width: 20%;
+     top: 15%;
 }
 
 .cloud3 {
@@ -89,57 +89,71 @@ h2 {
      height: 30%;
      bottom: 0;
      left: 50%;
-     transform: translateX(-65%);
-     position: absolute;
+     transform: translate(-65%);
+     position: fixed;
 }
 
 .tree1 {
-     max-width: 800px;
-     height: 75%;
+     max-height: 80%;
      bottom: 0;
-     left: -10%;
-     position: absolute;
+     left: -3%;
+     position: fixed;
+     transform: translateY(2%);
 }
 
 .tree2 {
-     max-width: 800px;
-     height: 72%;
+     max-height: 72%;
      bottom: 0;
-     left: 4%;
-     position: absolute;
+     left: 11%;
+     position: fixed;
      z-index: 1;
 }
 
 .tree3 {
-     max-width: 800px;
-     height: 75%;
+	 max-height: 75%;
      bottom: 0;
      right: 3%;
-     position: absolute;
+     position: fixed;
      z-index: 1;
+     transform: translateY(2%);
 }
 
 .tree4 {
-     max-width: 800px;
-     height: 62%;
+     max-height: 62%;
      bottom: 0;
      right: 0;
-     position: absolute;
+     position: fixed;
      z-index: 2;
 }
 
 .emailbox {
-     font-family: sofiaprocondlight;
-     font-size: 1vw;
-     margin-left: auto;
-     margin-right: auto;
-     display: block;
-     text-align: center;
-     min-width: 200px;
-     min-height: 30px;
+	 text-align: center;
+     width: 65%;
      background-color: transparent;
      border: 2.5px solid #1C3144;
      border-radius: 5px;
+     float: left;
+     height: 100%;
+}
+
+.submitButton {
+	text-align: center;
+    width: 30%;
+    background-color: #1C3144;
+    border: 2.5px solid transparent;
+    color: white;
+    border-radius: 5px;
+	float: right;
+	height: 100%;
+	
+}
+
+#wrapper {
+	font-family: sofiaprocondlight;
+	width: 20%;
+	font-size: 24px;
+	height: 30px;
+	margin: 0 auto;
 }
 
 input::-webkit-input-placeholder {
@@ -245,7 +259,19 @@ input[type="textbox"]:focus{
     content:'b';
 }
 
+@media(max-width: 1050px) {
+	.tree2, .tree3 {
+		display: none !important;
+	}
+}
+
 @media(max-width: 1000px) {
+	.cloud3, .tree1, .tree4 {
+		display: none !important;
+	}
+}
+
+@media(max-width: 1000px) and (min-width: 600px) {
 
      h1 {
           font-size: 11vw;
@@ -264,12 +290,29 @@ input[type="textbox"]:focus{
           margin-top: -10%;
      }
 
-     .cloud3, .tree1, .tree2, .tree3, .tree4 {
-          display: none !important;
-     }
-     
+     #wrapper {
+		width: 500px;
+		height: 60px;
+	}
      
 }
+
+@media(max-width: 600px) {
+
+	h1 {
+		font-size: 11vw;
+	}
+
+	h2 {
+		font-size: 6vw;
+	}
+
+	#wrapper {
+		width: 200px;
+	}
+
+}
+
 =======
 .jumbotron {
   background: #532F8C;
