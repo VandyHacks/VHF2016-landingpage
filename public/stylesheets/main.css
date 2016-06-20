@@ -290,6 +290,11 @@ input[type="textbox"]:focus{
           margin-top: -10%;
      }
 
+     .squirrel {
+     	height: 20%;
+     	transform: translate(-65%, -3%);
+     }
+
      #wrapper {
 		width: 500px;
 		height: 60px;
@@ -313,7 +318,6 @@ input[type="textbox"]:focus{
 
 }
 
-=======
 .jumbotron {
   background: #532F8C;
   color: white;
@@ -342,9 +346,8 @@ input[type="textbox"]:focus{
       max-width: 100%; }
 
 
-
 #sub_text {
     text-align:center;
     font-family: sofiaprocondblack;
-    color: #cc0000
+    color: #D2B48C;
 }
