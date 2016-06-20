@@ -89,7 +89,7 @@ h2 {
      height: 30%;
      bottom: 0;
      left: 50%;
-     transform: translate(-65%);
+     transform: translate(-65%, 7%);
      position: fixed;
 }
 
@@ -261,15 +261,19 @@ input[type="textbox"]:focus{
 
 /* mobile responsiveness */
 @media(max-width: 1050px) {
+
 	.tree2, .tree3 {
 		display: none !important;
 	}
+
 }
 
 @media(max-width: 1000px) {
+
 	.cloud3, .tree1, .tree4 {
 		display: none !important;
 	}
+
 }
 
 @media(max-width: 1000px) and (min-width: 600px) {
@@ -319,14 +323,17 @@ input[type="textbox"]:focus{
 
     .squirrel {
         height: 15%;
+        transform: translate(-65%, -12%);
     }
 
 }
 
-@media(landscape: orientation) {
+@media(max-height: 450px) {
+
     .squirrel {
         display: none !important;
     }
+
 }
 
 .jumbotron {
