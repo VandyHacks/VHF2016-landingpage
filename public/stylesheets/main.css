@@ -78,7 +78,7 @@ h2 {
      transform: scaleX(-1);
      filter: FlipH;
      -ms-filter: "FlipH";
-     position: absolute;
+     position: fixed;
      left: 22%;
      width: 15%;
      top: 35%;
@@ -259,6 +259,7 @@ input[type="textbox"]:focus{
     content:'b';
 }
 
+/* mobile responsiveness */
 @media(max-width: 1050px) {
 	.tree2, .tree3 {
 		display: none !important;
@@ -316,6 +317,16 @@ input[type="textbox"]:focus{
 		width: 200px;
 	}
 
+    .squirrel {
+        height: 15%;
+    }
+
+}
+
+@media(landscape: orientation) {
+    .squirrel {
+        display: none !important;
+    }
 }
 
 .jumbotron {
