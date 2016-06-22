@@ -36,7 +36,7 @@ io.on('connection', (socket) => {
 });
 
 app.set('socketio', io);
-app.post('/subscribe', subscribe.subscribe);
+app.post('/subscribe', subscribe);
 
 // error handlers
 
