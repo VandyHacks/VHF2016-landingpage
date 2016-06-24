@@ -41,7 +41,7 @@ h2 {
      margin-right: auto;
      margin-left: auto;
      display: block;
-     height: 25%;
+     max-height: 25%;
      margin-top: 3%;
 }
 
@@ -333,6 +333,10 @@ input[type="textbox"]:focus{
 
 /* account for virtual keyboard */
 @media(max-width: 420px) and (max-height: 425px) {
+
+    .logo {
+        height: 25%;
+    }
 
 	.squirrel {
 		display: none !important;
