@@ -15,8 +15,8 @@ body {
      background: -o-linear-gradient(#E6FFFF, #99D6D3); 
      background: -moz-linear-gradient(#E6FFFF, #99D6D3); 
      background: linear-gradient(#E6FFFF, #99D6D3);
-     width: 100%;
      overflow: hidden;
+     position: relative;
 }
 
 h1 {
@@ -88,7 +88,7 @@ h2 {
      height: 90%;
      bottom: 0;
      left: 50%;
-     transform: translate(-65%, 7%);
+     transform: translate(-65%, 23%);
      position: relative;
 }
 
