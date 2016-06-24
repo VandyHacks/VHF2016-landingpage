@@ -16,6 +16,7 @@ body {
      background: -moz-linear-gradient(#E6FFFF, #99D6D3); 
      background: linear-gradient(#E6FFFF, #99D6D3);
      width: 100%;
+     padding-bottom: 30px;
      overflow: hidden;
 }
 
