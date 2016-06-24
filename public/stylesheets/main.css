@@ -332,6 +332,15 @@ input[type="textbox"]:focus{
 
 }
 
+/* account for virtual keyboard */
+@media(max-width: 420px) and (max-height: 425px) {
+
+	.squirrel {
+		display: none !important;
+	}
+
+}
+
 .jumbotron {
   background: #532F8C;
   color: white;
