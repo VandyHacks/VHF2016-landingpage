@@ -297,8 +297,7 @@ input[type="textbox"]:focus{
      }
 
      .cloud2 {
-          width: 15%;
-          margin-top: -10%;
+          top: 10%;
      }
 
      #wrapper {
@@ -338,6 +337,10 @@ input[type="textbox"]:focus{
 	.squirrel {
 		display: none !important;
 	}
+
+    .cloud2 {
+        top: 4%;
+    }
 
 }
 
