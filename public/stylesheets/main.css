@@ -135,6 +135,7 @@ h2 {
      border-radius: 5px;
      float: left;
      height: 100%;
+     padding-left: 6px;
 }
 
 .submitButton {
