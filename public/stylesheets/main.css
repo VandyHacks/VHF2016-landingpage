@@ -379,5 +379,6 @@ input[type="textbox"]:focus{
 #sub_text {
     text-align:center;
     font-family: sofiaprocondblack;
-    color: #D2B48C;
+    color: #1D1D51;
+    margin: 5px;
 }
