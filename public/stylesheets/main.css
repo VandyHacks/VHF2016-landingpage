@@ -161,7 +161,7 @@ h2 {
 	font-family: sofiaprocondlight;
 	width: 20%;
 	font-size: 24px;
-        height: 30px;
+    height: 30px;
 	margin: 0 auto;
 }
 
@@ -308,7 +308,7 @@ input[type="textbox"]:focus{
      }
 
      #wrapper {
-		width: 500px;
+		width: 50%;
 		height: 60px;
 	}
      
@@ -325,8 +325,16 @@ input[type="textbox"]:focus{
 	}
 
 	#wrapper {
-		width: 200px;
+		width: 70%;
 	}
+
+}
+
+@media(max-width: 400px) {
+
+    #wrapper {
+        width: 90%;
+    }
 
 }
 
