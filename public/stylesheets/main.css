@@ -93,11 +93,11 @@ h2 {
 }
 
 .squirrel {
-     height: 90%;
+     height: 20%;
      bottom: 0;
      left: 50%;
-     transform: translate(-65%, 23%);
-     position: relative;
+     transform: translate(-65%, 7%);
+     position: fixed;
 }
 
 .tree1 {
@@ -163,13 +163,6 @@ h2 {
 	font-size: 24px;
         height: 30px;
 	margin: 0 auto;
-}
-
-#squirrelWrapper {
-	bottom: 0;
-	height: 20%;
-	width: 100%;
-	position: absolute;
 }
 
 input::-webkit-input-placeholder {
