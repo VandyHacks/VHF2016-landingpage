@@ -176,23 +176,23 @@ h2 {
 }
 
 .submitButton {
-	text-align: center;
-    width: 30%;
-    background-color: #1C3144;
-    border: 2.5px solid transparent;
-    color: white;
-    border-radius: 5px;
-	float: right;
-	height: 100%;
+     text-align: center;
+     width: 30%;
+     background-color: #1C3144;
+     border: 2.5px solid transparent;
+     color: white;
+     border-radius: 5px;
+     float: right;
+     height: 100%;
 	
 }
 
 #wrapper {
-	font-family: sofiaprocondlight;
-	width: 20%;
-	font-size: 24px;
-    height: 30px;
-	margin: 0 auto;
+     font-family: sofiaprocondlight;
+     width: 20%;
+     font-size: 24px;
+     height: 30px;
+     margin: 0 auto;
 }
 
 input::-webkit-input-placeholder {
@@ -357,6 +357,14 @@ input[type="textbox"]:focus{
 	#wrapper {
 		width: 70%;
 	}
+
+	.cloud1 {
+		animation-duration: 30s;
+	}
+
+	.cloud2 {
+		animation-duration: 50s;
+	}	
 
 }
 
