@@ -1,12 +1,12 @@
 
 @font-face {
-     font-family: sofiaprocondblack;
-     src: url(SofiaProCondBlack.ttf);
+     font-family: 'sofiaprocondblack';
+     src: url('SofiaProCondBlack.ttf');
 }
 
 @font-face {
-     font-family: sofiaprocondlight;
-     src: url(SofiaProCondLight.ttf);
+     font-family: 'sofiaprocondlight';
+     src: url('SofiaProCondLight.ttf');
 }
 
 html {
@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-     font-family: sofiaprocondblack;
+     font-family: 'sofiaprocondblack';
      font-size: 5vw;
      color: #1A3244;
      text-align: center;
@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-     font-family: sofiaprocondlight;
+     font-family: 'sofiaprocondlight';
      font-size: 2vw;
      color: #1A3244;
      text-align: center;
@@ -49,11 +49,11 @@ h2 {
      margin-top: 3%;
 }
 
-.copyright { 
-     font-size: .4em;
+.trademark { 
+     font-size: .3em;
      vertical-align: top;
-     margin-left: 10px;
-     margin-right: 10px;
+     margin-left: 5px;
+     margin-right: 5px;
 }
 
 @keyframes animateCloud1 {
@@ -83,7 +83,7 @@ h2 {
      animation-name: animateCloud1;
      animation-duration: 120s;
      animation-iteration-count: infinite;
-     animation-timing-function: linear
+     animation-timing-function: linear;
 }
 
 .cloud2 {
@@ -101,7 +101,7 @@ h2 {
      animation-name: animateCloud2;
      animation-duration: 180s;
      animation-iteration-count: infinite;
-     animation-timing-function: linear
+     animation-timing-function: linear;
 }
 
 .cloud3 {
@@ -119,7 +119,7 @@ h2 {
      animation-name: animateCloud3;
      animation-duration: 90s;
      animation-iteration-count: infinite;
-     animation-timing-function: linear
+     animation-timing-function: linear;
 }
 
 .squirrel {
