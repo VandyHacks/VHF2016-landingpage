@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <title>VandyHacks Landing</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="shortcut icon" href="images/logo.ico">
-     <link rel="stylesheet" type="text/css"  href="stylesheets/main.css">
-     <script src="/socket.io/socket.io.js"></script>
+  <title>VandyHacks Landing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/logo.ico">
+  <link rel="stylesheet" type="text/css"  href="stylesheets/main.css">
+  <script src="/socket.io/socket.io.js"></script>
 </head>
 <body>
-     <img class="cloud1" src="images/Cloud.svg"/>
-     <img class="logo" src="images/VHLogo.svg"/>
-     <img class="cloud2" src="images/Cloud.svg"/>
-     <h1>VANDY<span class="trademark">&reg;</span>HACKS III</h1>
-     <h2 >November 11 - 13 | Vanderbilt University </h2><br />
-     <iframe width="0" height="0" border="0" name="dummyframe" style="display: none;" ></iframe>
-     <div id="wrapper">
-     <form id="sub" action="subscribe?" method="post" target = "dummyframe"><input class="emailbox" name="email" type="textbox" placeholder="you@email.edu" onfocus="this.placeholder = ''" onblur="this.placeholder = 'you@email.edu'">
-     </form>
-     <button type="submit" class="submitButton" form="sub" value="Submit">Submit</button>
-     </div>
-     <div id = 'sub_text'></div>
-     <ul class="soc">
-     <li><a class="soc-facebook" href="https://www.facebook.com/vandyhacks" target="_blank"></a></li>
-     <li><a class="soc-twitter" href="https://twitter.com/vandyhacks" target="_blank" ></a></li>
-     </ul><br />
-     <img class="cloud3" src="images/Cloud.svg"/>
-     <img class="tree1" src ="images/Tree.svg"/>
-     <img class="tree2" src="images/Tree2.svg"/>
-     <img class="tree3" src="images/Tree.svg"/>
-     <img class="tree4" src="images/Tree3.svg"/>
-     <img class="squirrel" src="images/Squirrel.svg"/>
-     </body>
+  <img class="cloud1" src="images/Cloud.svg"/>
+  <img class="logo" src="images/VHLogo.svg"/>
+  <img class="cloud2" src="images/Cloud.svg"/>
+  <h1>VANDY<span class="trademark">&reg;</span>HACKS III</h1>
+  <h2 >November 11 - 13 | Vanderbilt University </h2><br />
+  <iframe width="0" height="0" border="0" name="dummyframe" style="display: none;" ></iframe>
+  <div id="wrapper">
+    <form id="sub" action="subscribe?" method="post" target = "dummyframe">
+      <input class="emailbox" name="email" type="textbox" placeholder="you@email.edu" onfocus="this.placeholder = ''" onblur="this.placeholder = 'you@email.edu'">
+    </form>
+    <button type="submit" class="submitButton" form="sub" value="Submit">Submit</button>
+  </div>
+  <div id = 'sub_text'></div>
+  <ul class="soc">
+    <li><a class="soc-facebook" href="https://www.facebook.com/vandyhacks" target="_blank"></a></li>
+    <li><a class="soc-twitter" href="https://twitter.com/vandyhacks" target="_blank" ></a></li>
+  </ul><br />
+  <img class="cloud3" src="images/Cloud.svg"/>
+  <img class="tree1" src ="images/Tree.svg"/>
+  <img class="tree2" src="images/Tree2.svg"/>
+  <img class="tree3" src="images/Tree.svg"/>
+  <img class="tree4" src="images/Tree3.svg"/>
+  <img class="squirrel" src="images/Squirrel.svg"/>
+</body>
 <script>
-    var socket = io();
-    var message = document.getElementById('sub_text');
-    socket.on('error', function(errString) {
-      message.innerHTML = errString;
-      console.log(errString);
-    });
+var socket = io();
+var message = document.getElementById('sub_text');
+socket.on('error', function(errString) {
+  message.innerHTML = errString;
+  console.log(errString);
+});
 </script>
 </html>
