@@ -20,10 +20,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/', routes);
 
-// views is directory for all template files
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
-
 const server = app.listen(app.get('port'), () => {
   console.log('Node app is running on port', app.get('port'));
 });
