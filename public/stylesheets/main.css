@@ -169,8 +169,6 @@ h2 {
   background-color: transparent;
   border: 2.5px solid #1C3144;
   border-radius: 5px;
-  float: left;
-  height: 100%;
   padding-left: 6px;
 }
 
@@ -181,16 +179,16 @@ h2 {
   border: 2.5px solid transparent;
   color: white;
   border-radius: 5px;
-  float: right;
-  height: 100%;
 }
 
-#wrapper {
+#sub {
   font-family: sofiaprocondlight;
   width: 25%;
   font-size: 24px;
   height: 30px;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 input::-webkit-input-placeholder {
@@ -335,7 +333,7 @@ input[type="textbox"]:focus{
     top: 10%;
   }
 
-  #wrapper {
+  #sub {
     width: 50%;
     height: 60px;
   }
@@ -352,7 +350,7 @@ input[type="textbox"]:focus{
     font-size: 6vw;
   }
 
-  #wrapper {
+  #sub {
     width: 70%;
   }
 
@@ -368,7 +366,7 @@ input[type="textbox"]:focus{
 
 @media(max-width: 400px) {
 
-  #wrapper {
+  #sub {
     width: 90%;
   }
 
