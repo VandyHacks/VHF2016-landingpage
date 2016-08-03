@@ -15,7 +15,11 @@ function subscribe(req, res) {
   },
   (error) => {
     if (error.error) {
-      io.emit('error', 'Try Again with a valid email address!');
+      if (error.code === 214) {
+        io.emit('error', 'You\'ve already subscribed for updates!');
+      } else {
+        io.emit('error', 'Try Again with a valid email address!');
+      }
       console.error(`${error.code}: ${error.error}`);
     } else {
       io.emit('error', 'Try Again. An error occured!');
