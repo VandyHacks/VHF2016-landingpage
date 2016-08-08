@@ -9,7 +9,7 @@ function subscribe(req, res) {
   const io = req.app.get('socketio');
 
   mc.lists.subscribe({ id: process.env.LIST_ID, email: { email: req.body.email } }, data => {
-    io.emit('error', 'Successfully Subscribed! Stay tuned for updates and get excited!');
+    io.emit('error', 'Successfully subscribed! Stay tuned for updates and get excited!');
     console.log('successful subscription');
     res.send('done');
   },
@@ -18,11 +18,11 @@ function subscribe(req, res) {
       if (error.code === 214) {
         io.emit('error', 'You\'ve already subscribed for updates!');
       } else {
-        io.emit('error', 'Try Again with a valid email address!');
+        io.emit('error', 'Try again with a valid email address!');
       }
       console.error(`${error.code}: ${error.error}`);
     } else {
-      io.emit('error', 'Try Again. An error occured!');
+      io.emit('error', 'Try again. An error occured!');
       console.error('an error occured');
     }
     res.redirect('/');
